@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SafarHamSafar</string>
+    <string name="resend_otp_on_sms_whatsapp"><![CDATA[Resend OTP on SMS & WhatsApp]]></string>
+    <string name="by_pressing_this_i_agree_to_receive_critical_messages_such_as_otp_bookig_details_on_whatsapp">By pressing this, I agree to receive critical messages such as OTP, bookig details on WhatsApp</string>
+</resources>

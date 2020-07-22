@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eceff1"
+    tools:context=".LoginActivity1">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Safar Hamsafar"
+        android:textColor="#1a237e"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp" />
+
+    <LinearLayout
+        android:id="@+id/sliderDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="280dp"
+        android:orientation="horizontal" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewPager"
+        android:layout_margin="15dp"
+        android:background="#ffffff"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Login/Signup Easily" />
+
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="320dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:background="#eceff1"
+                android:text="Sign in with Google"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/google_logo"/>
+
+            <TextView
+                android:id="@+id/txtsignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnGoogle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="Use Mobile Number to Login/Signup" />
+
+            <EditText
+                android:id="@+id/etMobNum"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/txtsignup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="20dp"
+                android:background="#eceff1"
+                android:hint="Enter Mobile Number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textSize="22dp" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etMobNum"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/border1"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="#3f51b5"
+                android:textSize="22dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtAcceptTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="18dp"
+        android:text="By Proceeding, you agree Safar Hamsafar's Privacy, User Agreement, T and Cs as well as Mobile Connects T and Cs"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="12dp" />
+
+</RelativeLayout>
