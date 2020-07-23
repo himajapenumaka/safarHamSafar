@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PayByUpiActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbarPayByUpi"/>
+
+    <TextView
+        android:id="@+id/txtUPI1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple 3 Step Process"
+        android:layout_below="@id/toolbarPayByUpi"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"/>
+
+    <View
+        android:id="@+id/viewUPI1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txtUPI1"
+        android:layout_marginTop="18dp"
+        android:background="#757575"/>
+
+    <TextView
+        android:id="@+id/txtUPI2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewUPI1"
+        android:layout_marginTop="15dp"
+        android:text="1. Verify Mobile Number once"
+        android:layout_marginLeft="16dp"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+
+    <View
+        android:id="@+id/viewUPI2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txtUPI2"
+        android:layout_marginTop="18dp"
+        android:background="#757575"/>
+
+    <TextView
+        android:id="@+id/txtUPI3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Select Bank Account"
+        android:layout_below="@id/viewUPI2"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+
+    <View
+        android:id="@+id/viewUPI3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txtUPI3"
+        android:layout_marginTop="18dp"
+        android:background="#757575"/>
+
+    <TextView
+        android:id="@+id/txtUPI4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Pay via MPIN"
+        android:layout_below="@id/viewUPI3"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/txtUPI5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND SMS"
+        android:layout_below="@id/viewUPI1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:layout_marginRight="13dp"
+        android:textColor="#f4511e"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewUPI3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20sp"
+        android:layout_toRightOf="@id/txtUPI4"
+        android:text="No Payment will be deducted till you enter MPIN"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/txtSafePayByUpi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Safe and Secure"
+        android:layout_below="@id/txtUPI4"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="italic"
+        android:textSize="14dp"
+        android:drawableLeft="@drawable/ic_lock_amazon_pay"
+        android:drawablePadding="5dp"/>
+
+    <ImageView
+        android:id="@+id/imgUPILogoUpi"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/upi_logo"
+        android:layout_toRightOf="@id/txtSafePayByUpi"
+        android:layout_below="@id/txtUPI4"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/txtUPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgUPILogoUpi"
+        android:layout_below="@id/txtUPI4"
+        android:layout_marginTop="60dp"
+        android:text="UPI"
+        android:textStyle="italic"
+        android:textSize="14dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/txtICICIupi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtUPI"
+        android:layout_below="@id/txtUPI4"
+        android:layout_marginTop="60dp"
+        android:text="Powered by ICICI"
+        android:textStyle="italic"
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/txtICICIupi"
+        android:layout_below="@id/txtUPI4"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/icici_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSafePayByUpi"
+        android:layout_marginTop="40dp"
+        android:text="Pay via other UPI Apps"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#153084"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Rs. 3,140"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:textAlignment="viewEnd"
+            android:layout_marginRight="15dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:text="Due Now"
+            android:textColor="#fff"
+            android:gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_info_amazon_pay" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9">
+
+            <Button
+                android:layout_weight="1.9"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:text="Continue"
+                android:textSize="18dp"
+                android:layout_centerInParent="true"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:background="@drawable/border2"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

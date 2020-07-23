@@ -1,26 +1,28 @@
-package com.ks.safarhamsafar
+package com.ks.safarhamsafar.LogIn
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
+import com.ks.safarhamsafar.R
 
-class LoginActivity3 : AppCompatActivity() {
+class LoginActivity2 : AppCompatActivity() {
 
     lateinit var toolBar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login3)
+        setContentView(R.layout.activity_login2)
 
-        toolBar=findViewById(R.id.toolbarLogin3)
+        toolBar=findViewById(R.id.toolbarLogin2)
         setSupportActionBar(toolBar)
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
     }
 
-    override fun onSupportNavigateUp(): Boolean{
+    override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
     }
+
 }

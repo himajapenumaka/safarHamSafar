@@ -1,4 +1,4 @@
-package com.ks.safarhamsafar
+package com.ks.safarhamsafar.Adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,11 +7,15 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
+import com.ks.safarhamsafar.R
 
 class ViewPagerAdapter(val context: Context): PagerAdapter() {
 
     lateinit var layoutInflater: LayoutInflater
-    var images= arrayOf<Int>(R.drawable.login_img1,R.drawable.login_img2)
+    var images= arrayOf<Int>(
+        R.drawable.login_img1,
+        R.drawable.login_img2
+    )
 
     override fun isViewFromObject(view: View, `object`: Any): Boolean {
         return view==`object`

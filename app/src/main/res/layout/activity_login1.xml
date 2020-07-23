@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#eceff1"
-    tools:context=".LoginActivity1">
+    tools:context=".LogIn.LoginActivity1">
 
     <TextView
         android:id="@+id/title"
@@ -18,7 +18,7 @@
         android:fontFamily="sans-serif-black"
         android:text="Safar Hamsafar"
         android:textColor="#1a237e"
-        android:textSize="26dp"
+        android:textSize="26sp"
         android:textStyle="bold" />
 
     <androidx.viewpager.widget.ViewPager
@@ -71,7 +71,7 @@
                 android:background="#eceff1"
                 android:text="Sign in with Google"
                 android:textAllCaps="false"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:drawableLeft="@drawable/google_logo"/>
 
             <TextView
@@ -97,7 +97,7 @@
                 android:maxLength="10"
                 android:maxLines="1"
                 android:textAlignment="center"
-                android:textSize="22dp" />
+                android:textSize="22sp" />
 
             <Button
                 android:layout_width="140dp"
@@ -108,8 +108,8 @@
                 android:background="@drawable/border1"
                 android:text="Continue"
                 android:textAllCaps="false"
-                android:textColor="#3f51b5"
-                android:textSize="22dp" />
+                android:textColor="#fff"
+                android:textSize="22sp" />
 
         </RelativeLayout>
 
@@ -121,9 +121,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="18dp"
-        android:text="By Proceeding, you agree Safar Hamsafar's Privacy, User Agreement, T and Cs as well as Mobile Connects T and Cs"
+        android:text="@string/accept_terms"
         android:textAlignment="center"
         android:textColor="#000"
-        android:textSize="12dp" />
+        android:textSize="12sp" />
 
 </RelativeLayout>

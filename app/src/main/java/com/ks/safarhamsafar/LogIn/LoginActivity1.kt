@@ -1,6 +1,5 @@
-package com.ks.safarhamsafar
+package com.ks.safarhamsafar.LogIn
 
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -9,6 +8,8 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
+import com.ks.safarhamsafar.R
+import com.ks.safarhamsafar.Adapters.ViewPagerAdapter
 import java.util.*
 
 class LoginActivity1 : AppCompatActivity() {
@@ -27,7 +28,8 @@ class LoginActivity1 : AppCompatActivity() {
         setContentView(R.layout.activity_login1)
 
         viewPager=findViewById(R.id.viewPager)
-        viewPagerAdapter= ViewPagerAdapter(this@LoginActivity1)
+        viewPagerAdapter=
+            ViewPagerAdapter(this@LoginActivity1)
         viewPager.adapter=viewPagerAdapter
         sliderDotsPanel=findViewById(R.id.sliderDots)
 
@@ -79,10 +81,14 @@ class LoginActivity1 : AppCompatActivity() {
         for(i in 0..viewPagerAdapter.count-1){
             dots[i]=ImageView(this)
             if(i==position){
-                dots[i].setImageDrawable(ContextCompat.getDrawable(this,R.drawable.active_dot))
+                dots[i].setImageDrawable(ContextCompat.getDrawable(this,
+                    R.drawable.active_dot
+                ))
             }
             else{
-                dots[i].setImageDrawable(ContextCompat.getDrawable(this,R.drawable.non_active_dot))
+                dots[i].setImageDrawable(ContextCompat.getDrawable(this,
+                    R.drawable.non_active_dot
+                ))
             }
             var params: LinearLayout.LayoutParams=LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT)
             params.setMargins(8,0,8,0)
