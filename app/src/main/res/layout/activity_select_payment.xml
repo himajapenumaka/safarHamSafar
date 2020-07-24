@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectPaymentActivity">
+
+    <include
+        android:id="@+id/toolbarSelectPayment"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/txtGoaSelectPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarSelectPayment"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="GINGER Goa Panjim"
+        android:textColor="#000"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarSelectPayment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="Goa, India" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/toolbarSelectPayment"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_down" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/llSelectPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtGoaSelectPay"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#eceff1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="Payment Options"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/ic_lock_amazon_pay"
+                android:drawablePadding="5dp"
+                android:text="Safe and Secure"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llSelectPay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img1SelectPay"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/upi_logo" />
+
+            <TextView
+                android:id="@+id/txt1SelectPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@id/img1SelectPay"
+                android:text="UPI BHIM"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_right" />
+
+            <View
+                android:id="@+id/view1SelectPay"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/img1SelectPay"
+                android:layout_marginTop="10dp"
+                android:background="#757575" />
+
+            <ImageView
+                android:id="@+id/img2SelectPay"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_below="@id/view1SelectPay"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/card_logo" />
+
+            <TextView
+                android:id="@+id/txt2SelectPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view1SelectPay"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@id/img2SelectPay"
+                android:text="Credit/Debit/ATM Card"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/view1SelectPay"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_right" />
+
+            <View
+                android:id="@+id/view2SelectPay"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/img2SelectPay"
+                android:layout_marginTop="10dp"
+                android:background="#757575" />
+
+            <ImageView
+                android:id="@+id/img3SelectPay"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_below="@id/view2SelectPay"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/emi_logo" />
+
+            <TextView
+                android:id="@+id/txt3SelectPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view2SelectPay"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@id/img3SelectPay"
+                android:text="EMI"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/view2SelectPay"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_right" />
+
+            <View
+                android:id="@+id/view3SelectPay"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/img3SelectPay"
+                android:layout_marginTop="10dp"
+                android:background="#757575" />
+
+            <ImageView
+                android:id="@+id/img4SelectPay"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_below="@id/view3SelectPay"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/card_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view3SelectPay"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="9dp"
+                android:text="@"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/txt4SelectPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view3SelectPay"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@id/img4SelectPay"
+                android:text="Net Banking"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/view3SelectPay"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_right" />
+
+            <View
+                android:id="@+id/view4SelectPay"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/img4SelectPay"
+                android:layout_marginTop="10dp"
+                android:background="#757575" />
+
+            <ImageView
+                android:id="@+id/img5SelectPay"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_below="@id/view4SelectPay"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/gift_card_logo" />
+
+            <TextView
+                android:id="@+id/txt5SelectPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view4SelectPay"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@id/img5SelectPay"
+                android:text="Gift Card"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/view4SelectPay"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_right" />
+
+            <View
+                android:id="@+id/view5SelectPay"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/img5SelectPay"
+                android:layout_marginTop="10dp"
+                android:background="#757575" />
+
+            <ImageView
+                android:id="@+id/img6SelectPay"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_below="@id/view5SelectPay"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/paypal_icon_logo" />
+
+            <TextView
+                android:id="@+id/txt6SelectPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view5SelectPay"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@id/img6SelectPay"
+                android:text="PayPal"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/view5SelectPay"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_right" />
+
+            <View
+                android:id="@+id/view6SelectPay"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/img6SelectPay"
+                android:layout_marginTop="10dp"
+                android:background="#757575" />
+
+            <ImageView
+                android:id="@+id/img7SelectPay"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_below="@id/view6SelectPay"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/mobile_wallet_logo" />
+
+            <TextView
+                android:id="@+id/txt7SelectPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view6SelectPay"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@id/img7SelectPay"
+                android:text="Mobile Wallet"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/view6SelectPay"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_right" />
+
+            <View
+                android:id="@+id/view7SelectPay"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/img7SelectPay"
+                android:layout_marginTop="10dp"
+                android:background="#757575" />
+
+            <ImageView
+                android:id="@+id/img8SelectPay"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_below="@id/view7SelectPay"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/phonepe_logo" />
+
+            <TextView
+                android:id="@+id/txt8SelectPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view7SelectPay"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@id/img8SelectPay"
+                android:text="PhonePe (UPI/Wallet/Cards)"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/view7SelectPay"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_right" />
+
+            <View
+                android:id="@+id/view8SelectPay"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/img8SelectPay"
+                android:layout_marginTop="10dp"
+                android:background="#757575" />
+
+            <ImageView
+                android:id="@+id/img9SelectPay"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_below="@id/view8SelectPay"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/amazon_pay" />
+
+            <TextView
+                android:id="@+id/txt9SelectPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view8SelectPay"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@id/img9SelectPay"
+                android:text="Amazon Pay"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/view8SelectPay"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_right" />
+
+            <View
+                android:id="@+id/view9SelectPay"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/img9SelectPay"
+                android:layout_marginTop="10dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#153084"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Rs. 3,140"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:textAlignment="viewEnd"
+            android:layout_marginRight="15dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Due Now"
+            android:textColor="#fff"
+            android:gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_info_amazon_pay" />
+
+    </LinearLayout>
+
+</RelativeLayout>

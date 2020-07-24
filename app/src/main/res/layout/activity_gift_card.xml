@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GiftCardActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbarGiftCard"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/toolbarGiftCard">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card Number"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="25dp"
+            android:inputType="number"
+            android:textColorHint="#000"
+            android:textColor="#000"
+            android:maxLines="1"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#153084"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Rs. 3,140"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:textAlignment="viewEnd"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:text="Due Now"
+            android:textColor="#fff"
+            android:gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_info_amazon_pay" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9">
+
+            <Button
+                android:layout_weight="1.9"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:text="Continue"
+                android:textSize="18dp"
+                android:layout_centerInParent="true"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:background="@drawable/border2"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmiBankActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbarEmiBank"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_below="@id/toolbarEmiBank"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt1EMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Citibank"
+            android:layout_marginLeft="35dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:layout_marginTop="22dp"/>
+
+        <View
+            android:id="@+id/view1EMI"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#757575"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/txt1EMI"/>
+
+            <TextView
+                android:id="@+id/txt2EMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Standard Chartered Bank"
+                android:layout_marginLeft="35dp"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:layout_below="@id/view1EMI"
+                android:layout_marginTop="22dp"/>
+
+            <View
+                android:id="@+id/view2EMI"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#757575"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/txt2EMI"/>
+
+            <TextView
+                android:id="@+id/txt3EMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Central Bank of India"
+                android:layout_marginLeft="35dp"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:layout_below="@id/view2EMI"
+                android:layout_marginTop="22dp"/>
+
+            <View
+                android:id="@+id/view3EMI"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#757575"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/txt3EMI"/>
+            <TextView
+                android:id="@+id/txt4EMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State Bank of India"
+                android:layout_marginLeft="35dp"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:layout_below="@id/view3EMI"
+                android:layout_marginTop="22dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13-15% interest"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13-15% interest"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:layout_below="@id/view1EMI"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13-15% interest"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:layout_below="@id/view2EMI"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13-15% interest"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:layout_below="@id/view3EMI"
+                android:layout_marginTop="25dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#153084"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Rs. 3,140"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:textAlignment="viewEnd"
+            android:layout_marginRight="15dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Due Now"
+            android:textColor="#fff"
+            android:gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_info_amazon_pay" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

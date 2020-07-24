@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PayPalActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbarPayPal"/>
+
+    <ImageView
+        android:id="@+id/imgPayPalLogo"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:src="@drawable/paypal_logo"
+        android:layout_below="@id/toolbarPayPal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1PayPal"
+        android:layout_below="@id/imgPayPalLogo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_grey">
+
+            <RadioButton
+                android:id="@+id/radio1PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/txt1Card1PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radio1PayPal"
+                android:text="INR (Indian Rupee)"
+                android:textColor="#000"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/txt2Card1PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radio1PayPal"
+                android:layout_below="@id/txt1Card1PayPal"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="3dp"
+                android:textSize="13dp"
+                android:text="No Conversion - This option is currently available to Indian PayPal Users"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view1PayPal"
+        android:layout_below="@id/card1PayPal"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#757575"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1PayPal"
+        android:layout_centerHorizontal="true"
+        android:text="OR"
+        android:textSize="16dp"
+        android:layout_marginTop="-12dp"
+        android:background="#fff" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2PayPal"
+        android:layout_below="@id/view1PayPal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_grey">
+
+            <RadioButton
+                android:id="@+id/radio2PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/txt1Card2PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radio2PayPal"
+                android:text="EUR (Euro)"
+                android:textColor="#000"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="7dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/txt2Card2PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radio2PayPal"
+                android:layout_below="@id/txt1Card2PayPal"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="3dp"
+                android:textSize="13dp"
+                android:text="1 EUR = 82.28 INR"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3PayPal"
+        android:layout_below="@id/card2PayPal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_grey">
+
+            <RadioButton
+                android:id="@+id/radio3PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/txt1Card3PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radio3PayPal"
+                android:text="GBP (British Pound)"
+                android:textColor="#000"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/txt2Card3PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radio3PayPal"
+                android:layout_below="@id/txt1Card3PayPal"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="3dp"
+                android:textSize="13dp"
+                android:text="1 GBP = 91.94 INR"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card4PayPal"
+        android:layout_below="@id/card3PayPal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_grey">
+
+            <RadioButton
+                android:id="@+id/radio4PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/txt1Card4PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radio4PayPal"
+                android:text="HKD (Hong Kong Dollar)"
+                android:textColor="#000"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/txt2Card4PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radio4PayPal"
+                android:layout_below="@id/txt1Card4PayPal"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="3dp"
+                android:textSize="13dp"
+                android:text="1 HKD = 9.4 INR"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card5PayPal"
+        android:layout_below="@id/card4PayPal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_grey">
+
+            <RadioButton
+                android:id="@+id/radio5PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/txt1Card5PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radio5PayPal"
+                android:text="SGD (Singapore Dollar)"
+                android:textColor="#000"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/txt2Card5PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radio5PayPal"
+                android:layout_below="@id/txt1Card5PayPal"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="3dp"
+                android:textSize="13dp"
+                android:text="1 SGD = 52.34 INR"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card6PayPal"
+        android:layout_below="@id/card5PayPal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_grey">
+
+            <RadioButton
+                android:id="@+id/radio6PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/txt1Card6PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radio6PayPal"
+                android:text="THB (Thai Baht)"
+                android:textColor="#000"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/txt2Card6PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radio6PayPal"
+                android:layout_below="@id/txt1Card6PayPal"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="3dp"
+                android:textSize="13dp"
+                android:text="1 THB = 2.33 INR"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card7PayPal"
+        android:layout_below="@id/card6PayPal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_grey">
+
+            <RadioButton
+                android:id="@+id/radio7PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/txt1Card7PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radio7PayPal"
+                android:text="USD (United State Dollar)"
+                android:textColor="#000"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/txt2Card7PayPal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radio7PayPal"
+                android:layout_below="@id/txt1Card7PayPal"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="3dp"
+                android:textSize="13dp"
+                android:text="1 USD = 72.89 INR"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
