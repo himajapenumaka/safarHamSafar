@@ -9,25 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SelectPaymentActivity">
+        <activity android:name=".Activities.SelectRoomActivity"></activity>
+        <activity android:name=".Activities.SelectPaymentActivity" />
+        <activity android:name=".Activities.NetBankingActivity" />
+        <activity android:name=".Activities.PayPalActivity" />
+        <activity android:name=".Activities.EmiBankActivity" />
+        <activity android:name=".Activities.GiftCardActivity" />
+        <activity android:name=".Activities.PayByUpiActivity" />
+        <activity android:name=".Activities.MobileWalletActivity" />
+        <activity android:name=".Activities.CardInfoActivity" />
+        <activity android:name=".Activities.AmazonPayActivity" />
+        <activity android:name=".LogIn.LoginActivity2" />
+        <activity android:name=".LogIn.LoginActivity1" />
+        <activity android:name=".LogIn.LoginActivity3" />
+        <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NetBankingActivity"></activity>
-        <activity android:name=".PayPalActivity" />
-        <activity android:name=".EmiBankActivity" />
-        <activity android:name=".GiftCardActivity" />
-        <activity android:name=".PayByUpiActivity" />
-        <activity android:name=".MobileWalletActivity" />
-        <activity android:name=".CardInfoActivity" />
-        <activity android:name=".AmazonPayActivity" />
-        <activity android:name=".LogIn.LoginActivity2" />
-        <activity android:name=".LogIn.LoginActivity1" />
-        <activity android:name=".LogIn.LoginActivity3" />
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

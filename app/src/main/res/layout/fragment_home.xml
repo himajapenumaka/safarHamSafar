@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgHappyGirl"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/happy_girl3" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="?attr/actionBarSize"
+                    android:background="#00000000"
+                    android:layout_marginTop="18dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#00000000"
+                        android:gravity="center|right">
+
+                        <EditText
+                            android:id="@+id/editMobileNo"
+                            android:layout_width="290dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/login_edittext"
+                            android:drawableRight="@drawable/search_logo"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginRight="30dp"
+                            android:ems="10"
+                            android:gravity="left"
+                            android:hint="Try searching 'Delhi Trains'"
+                            android:paddingLeft="12dp"
+                            android:paddingTop="4dp"
+                            android:paddingRight="10dp"
+                            android:textSize="14dp"/>
+
+                    </LinearLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <LinearLayout
+            android:id="@+id/llHome"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/imgHappyGirl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/border_home">
+
+            <ImageView
+                android:id="@+id/imgFlights"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/flights" />
+
+            <ImageView
+                android:id="@+id/imgHotels"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/hotels" />
+
+            <ImageView
+                android:id="@+id/imgTrains"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/trains" />
+
+            <ImageView
+                android:id="@+id/imgHolidayPackages"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/holiday_packages" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llHome"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="-22dp"
+            android:text="Flights"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="9dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llHome"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="-22dp"
+            android:text="Hotels"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="9dp" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llHome"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="-22dp"
+            android:text="@string/trains_metro"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="9dp" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llHome"
+            android:layout_marginLeft="288dp"
+            android:layout_marginTop="-22dp"
+            android:text="Holiday Packages"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="9dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardHome"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@id/llHome"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="22dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txta"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Airport cabs"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txta"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Visa Services"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <View
+                    android:id="@+id/viewa"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/txta"
+                    android:background="#757575" />
+
+                <TextView
+                    android:id="@+id/txtb"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/viewa"
+                    android:text="Villas"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtb"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/viewa"
+                    android:text="@string/apts_homes"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <View
+                    android:id="@+id/viewb"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/txtb"
+                    android:background="#757575" />
+
+                <TextView
+                    android:id="@+id/txtc"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/viewb"
+                    android:text="Bus"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtc"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toRightOf="@id/viewb"
+                    android:text="Outstation Cabs"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <View
+                    android:id="@+id/viewc"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/txtc"
+                    android:background="#757575" />
+
+                <TextView
+                    android:id="@+id/txtd"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/viewc"
+                    android:text="Airport cabs"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtd"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/viewc"
+                    android:text="@string/meals_deals"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler1Home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardHome"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <TextView
+            android:id="@+id/txtTravelSafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recycler1Home"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Travel Safe"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTravelSafe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTravelSafe"
+            android:layout_marginLeft="20dp"
+            android:text="Your safety: our priority"
+            android:textColor="#424242" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2Home"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/txtTravelSafe2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableRight="@drawable/right_orange"
+                    android:drawablePadding="20dp"
+                    android:text="Your guide to help you make smart travel decisions during COVID-19"
+                    android:textAlignment="textStart"
+                    android:textColor="#000"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler2Home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card2Home"
+            android:layout_marginRight="20dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3Home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recycler2Home"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtoutstationCabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outstation Cabs"
+                    android:textColor="#000"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtoutstationCabs2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtoutstationCabs"
+                    android:text="Book hygenic cabs at best prices"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#424242"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler3Home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_below="@id/txtoutstationCabs2"
+                    android:layout_marginRight="20dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card3Home"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/cardforneeds1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Card for all your travel needs"
+                    android:textColor="#000"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/cardforneeds2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardforneeds1"
+                    android:text="Forex and Credit Cards"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#424242"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler4Home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_below="@id/cardforneeds2"
+                    android:layout_marginRight="20dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

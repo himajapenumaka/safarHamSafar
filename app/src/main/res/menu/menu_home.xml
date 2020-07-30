@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:title="@string/view_manage_trips"
+            android:icon="@drawable/lock_logo"/>
+
+        <item
+            android:title="@string/help_support"
+            android:icon="@drawable/mail_logo"/>
+
+        <item
+            android:title="@string/gift_cards"
+            android:icon="@drawable/giftcard_logo"/>
+
+        <item
+            android:title="@string/shs_doubleblack"
+            android:icon="@drawable/shs_logo"/>
+
+        <item
+            android:title="@string/notifications"
+            android:icon="@drawable/notifications_logo"/>
+
+        <item
+            android:title="Settings"
+            android:icon="@drawable/settings_logo"/>
+
+        <item
+            android:title="My Shortlists"
+            android:icon="@drawable/fav_logo"/>
+
+        <item
+            android:title="Redeem Coupon"
+            android:icon="@drawable/coupon_logo"/>
+
+        <item
+            android:title="Rate Us"
+            android:icon="@drawable/star_logo"/>
+
+    </group>
+
+    <item
+        android:title="Fly">
+
+        <menu>
+
+            <item android:title="A"/>
+            <item android:title="B"/>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Stay">
+
+        <menu>
+
+            <item android:title="A"/>
+            <item android:title="B"/>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Experience">
+
+        <menu>
+
+            <item android:title="A"/>
+            <item android:title="B"/>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Travel">
+
+        <menu>
+
+            <item android:title="A"/>
+            <item android:title="B"/>
+
+        </menu>
+
+    </item>
+
+</menu>
