@@ -1,9 +1,530 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.SelectRoomActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSelectRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtselectRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Select Room"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtselectRoom"
+                android:layout_marginBottom="20dp"
+                android:text="The Park Baga Reserve Goa"
+                android:textColor="#424242"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_question_answer" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarSelectRoom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1SelectRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txtuncertainity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="In times of Uncertainity, flexibility matters"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtuncertainity"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Opt for a free cancellation, Zero payment now rate"
+                        android:textColor="#000"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2SelectRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card1SelectRoom"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgBeachSelectRoom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:src="@drawable/beach" />
+
+                    <TextView
+                        android:id="@+id/txtluxury"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgBeachSelectRoom"
+                        android:layout_marginLeft="25dp"
+                        android:text="Luxury Village View"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/kingbed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtluxury"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#e0e0e0"
+                        android:padding="5dp"
+                        android:text="King Bed"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtluxury"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@id/kingbed"
+                        android:background="#e0e0e0"
+                        android:padding="5dp"
+                        android:text="335 sq.ft"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/txtwhy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kingbed"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:text="WHY BOOKING THIS ROOM?"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/txtac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtwhy"
+                        android:layout_marginLeft="25dp"
+                        android:text="- Air Conditioned"
+                        android:textColor="#424242"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txtwifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtwhy"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/txtac"
+                        android:text="- Free Wi-Fi"
+                        android:textColor="#424242"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txtkettle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtwhy"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/txtwifi"
+                        android:text="- Electric Kettle"
+                        android:textColor="#424242"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtwhy"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/txtkettle"
+                        android:text="More"
+                        android:textColor="#FF5722" />
+
+                    <TextView
+                        android:id="@+id/roomTriffs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtac"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:text="ROOM TRIFFS (2)"
+                        android:textColor="#434343" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card3selectRoom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/roomTriffs"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txtbreakfast"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Breakfast"
+                                android:textColor="#000" />
+
+                            <TextView
+                                android:id="@+id/txtbreakfast1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txtbreakfast"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/special_offer"
+                                android:textSize="11dp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/txtbreakfast2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txtbreakfast1"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/special_offer"
+                                android:textSize="11dp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/txtbreakfast3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txtbreakfast2"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/special_offer"
+                                android:textSize="11dp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/txtbreakfast4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txtbreakfast3"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="@string/special_offer"
+                                android:textSize="11dp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/txtbreakfast5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="This booking is not refundable."
+                                android:layout_below="@id/txtbreakfast4"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="13dp"
+                                android:textColor="#f44336"/>
+
+                            <TextView
+                                android:id="@+id/txtbreakfast6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MORE INFO"
+                                android:layout_below="@id/txtbreakfast5"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#FF5722"
+                                android:layout_marginBottom="10dp"/>
+
+                            <RelativeLayout
+
+                                android:layout_alignParentRight="true"
+                                android:layout_width="90dp"
+                                android:layout_height="150dp"
+                                android:background="#84ffff">
+
+                                <TextView
+                                    android:id="@+id/txtbuy1get1"
+                                    android:layout_width="60dp"
+                                    android:layout_height="20dp"
+                                    android:text="Buy 1 Get 1"
+                                    android:textColor="#fff"
+                                    android:textSize="10dp"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/border2"/>
+
+                                <TextView
+                                    android:id="@+id/txtrs1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="R̶s̶.̶ ̶6̶,̶1̶2̶5̶"
+                                    android:layout_below="@id/txtbuy1get1"
+                                    android:textColor="#000"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="12dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"/>
+
+                                <TextView
+                                    android:id="@+id/txtrs2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Rs. 3,625"
+                                    android:layout_below="@id/txtrs1"
+                                    android:textColor="#000"
+                                    android:layout_marginTop="9dp"
+                                    android:textSize="15dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"/>
+
+                                <TextView
+                                    android:id="@+id/txtpernight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Per Night"
+                                    android:layout_below="@id/txtrs2"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textSize="11dp"/>
+
+                                <TextView
+                                    android:id="@+id/txtselected"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="SELECTED"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:textStyle="bold"
+                                    android:textSize="12dp"
+                                    android:textColor="#FF5722"/>
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card3selectRoom"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txtbreakfast21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Breakfast"
+                                android:textColor="#000" />
+
+                            <TextView
+                                android:id="@+id/txtbreakfast22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txtbreakfast21"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/special_offer"
+                                android:textSize="11dp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/txtbreakfast23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txtbreakfast22"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/special_offer"
+                                android:textSize="11dp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/txtbreakfast24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txtbreakfast23"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/special_offer"
+                                android:textSize="11dp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/txtbreakfast25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txtbreakfast24"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="@string/special_offer"
+                                android:textSize="11dp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/txtbreakfast26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="This booking is not refundable."
+                                android:layout_below="@id/txtbreakfast25"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="13dp"
+                                android:textColor="#f44336"/>
+
+                            <TextView
+                                android:id="@+id/txtbreakfast27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MORE INFO"
+                                android:layout_below="@id/txtbreakfast26"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#FF5722"
+                                android:layout_marginBottom="10dp"/>
+
+                            <RelativeLayout
+
+                                android:layout_alignParentRight="true"
+                                android:layout_width="90dp"
+                                android:layout_height="150dp"
+                                android:background="#e0e0e0">
+
+                                <TextView
+                                    android:id="@+id/txtbuy1get12"
+                                    android:layout_width="60dp"
+                                    android:layout_height="20dp"
+                                    android:text="Buy 1 Get 1"
+                                    android:textColor="#fff"
+                                    android:textSize="10dp"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/border2"/>
+
+                                <TextView
+                                    android:id="@+id/txtrs21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="R̶s̶.̶ ̶6̶,̶1̶2̶5̶"
+                                    android:layout_below="@id/txtbuy1get12"
+                                    android:textColor="#000"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="12dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"/>
+
+                                <TextView
+                                    android:id="@+id/txtrs22"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Rs. 3,625"
+                                    android:layout_below="@id/txtrs21"
+                                    android:textColor="#000"
+                                    android:layout_marginTop="9dp"
+                                    android:textSize="15dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"/>
+
+                                <TextView
+                                    android:id="@+id/txtpernight2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Per Night"
+                                    android:layout_below="@id/txtrs22"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textSize="10dp"/>
+
+                                <TextView
+                                    android:id="@+id/txtselected2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="SELECT"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:textStyle="bold"
+                                    android:textSize="12dp"
+                                    android:textColor="#FF5722"/>
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

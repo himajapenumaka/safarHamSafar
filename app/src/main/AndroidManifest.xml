@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.SelectRoomActivity"></activity>
+        <activity android:name=".Activities.SelectRoomActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Activities.SelectPaymentActivity" />
         <activity android:name=".Activities.NetBankingActivity" />
         <activity android:name=".Activities.PayPalActivity" />
@@ -22,13 +28,7 @@
         <activity android:name=".LogIn.LoginActivity2" />
         <activity android:name=".LogIn.LoginActivity1" />
         <activity android:name=".LogIn.LoginActivity3" />
-        <activity android:name=".Activities.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Activities.MainActivity"></activity>
     </application>
 
 </manifest>

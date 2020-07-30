@@ -16,5 +16,6 @@
     <string name="trains_metro"><![CDATA[Trains & Metro]]></string>
     <string name="apts_homes"><![CDATA[Apts & Homes]]></string>
     <string name="meals_deals"><![CDATA[Meals & Deals]]></string>
+    <string name="special_offer">- Special offer: Book 1 Room, Get a complimentary stay!!</string>
 
 </resources>
