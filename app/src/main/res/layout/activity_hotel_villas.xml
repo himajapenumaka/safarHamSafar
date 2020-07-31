@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotelVillas.HotelVillasActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarHotelVillas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"></androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarHotelVillas">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1HotelVillas"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioGroup
+                        android:id="@+id/radiogrp1HotelVillas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INDIA"
+                        android:textSize="16dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INTERNATIONAL"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="12dp"/>
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/txtCityAreaHotelVillas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CITY/AREA/PROPERTY NAME"
+                        android:layout_below="@id/radiogrp1HotelVillas"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#424242"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/txtGoaHotelVillas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtCityAreaHotelVillas"
+                        android:text="Goa"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtIndiaHotelVillas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="India"
+                        android:layout_below="@id/txtGoaHotelVillas"
+                        android:layout_centerHorizontal="true"/>
+
+                    <View
+                        android:id="@+id/view1HotelVillas"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#757575"
+                        android:layout_below="@id/txtIndiaHotelVillas"
+                        android:layout_marginTop="10dp"/>
+
+                    <View
+                        android:id="@+id/view2HotelVillas"
+                        android:layout_width="1dp"
+                        android:layout_height="120dp"
+                        android:background="#757575"
+                        android:layout_below="@id/view1HotelVillas"
+                        android:layout_centerHorizontal="true"/>
+
+                    <View
+                        android:id="@+id/view3HotelVillas"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#757575"
+                        android:layout_below="@id/view2HotelVillas"/>
+
+                    <View
+                        android:id="@+id/view4HotelVillas"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#757575"
+                        android:layout_below="@id/view1HotelVillas"
+                        android:layout_marginTop="60dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CHECK-IN"
+                        android:layout_below="@id/view1HotelVillas"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="11dp"/>
+
+                    <TextView
+                        android:id="@+id/txtdateHotelVillas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="08"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_below="@id/view1HotelVillas"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="60dp"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="JUL 2020 Saturday"
+                        android:layout_toRightOf="@id/txtdateHotelVillas"
+                        android:layout_below="@id/view1HotelVillas"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="10dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CHECK-OUT"
+                        android:layout_below="@id/view1HotelVillas"
+                        android:layout_toRightOf="@id/view2HotelVillas"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="11dp"/>
+
+                    <TextView
+                        android:id="@+id/txtdate2HotelVillas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_toRightOf="@id/view2HotelVillas"
+                        android:layout_below="@id/view1HotelVillas"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="60dp"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="JUL 2020 Sunday"
+                        android:layout_toRightOf="@id/txtdate2HotelVillas"
+                        android:layout_below="@id/view1HotelVillas"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view4HotelVillas"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="10dp"
+                        android:text="GUESTS"
+                        android:textSize="11dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="02"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_below="@id/view4HotelVillas"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="60dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view4HotelVillas"
+                        android:layout_toRightOf="@id/view2HotelVillas"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="10dp"
+                        android:text="ROOMS"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_toRightOf="@id/view2HotelVillas"
+                        android:layout_below="@id/view4HotelVillas"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="60dp"/>
+
+                    <TextView
+                        android:id="@+id/txtoptionalHotelVillas"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view3HotelVillas"
+                        android:text="TRIP TYPE (Optional)"
+                        android:textSize="11dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view3HotelVillas"
+                        android:layout_toRightOf="@id/txtoptionalHotelVillas"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Business"
+                            android:textColor="#000"
+                            android:textSize="13dp"
+                            android:layout_marginLeft="20dp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Family"
+                            android:textColor="#000"
+                            android:textSize="13dp"
+                            android:layout_marginLeft="20dp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Romantic"
+                            android:textColor="#000"
+                            android:textSize="13dp"
+                            android:layout_marginLeft="20dp"/>
+
+                    </RadioGroup>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="SEARCH"
+                        android:layout_below="@id/txtoptionalHotelVillas"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/border2"
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2HotelVillas"
+                android:layout_below="@id/card1HotelVillas"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coronavirus(COVID-19) Update"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="13dp"
+                        android:textColor="#424242"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stay Informed and Travel Safe"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="17dp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler1HotelVillas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="30dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card3HotelVillas"
+                android:layout_below="@id/card2HotelVillas"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Offers For You"
+                        android:textColor="#000"
+                        android:textSize="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler2HotelVillas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="30dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
