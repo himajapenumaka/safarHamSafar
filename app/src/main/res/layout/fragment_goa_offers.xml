@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoaOffers.GoaOffersFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarGoaOffers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/whiteColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="70dp"
+                android:background="@drawable/border_grey">
+
+                <TextView
+                    android:id="@+id/txtGoaOffers"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@drawable/edit_orange"
+                    android:text="GOA"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtGoaOffers"
+                    android:layout_marginLeft="10dp"
+                    android:text="09 Jul - 10 Jul, 1 Room, 2 Guests"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/map_orange"
+                android:layout_marginLeft="-60dp"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/txtRecommendedGoaOffers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommended for You"
+        android:layout_below="@id/toolbarGoaOffers"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18dp"
+        android:textColor="#000"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtRecommendedGoaOffers"
+        android:id="@+id/recycler1GoaOffers"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

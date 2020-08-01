@@ -8,7 +8,8 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import com.ks.safarhamsafar.HomePage.HomeFragment
-import com.ks.safarhamsafar.Fragments.BFragment
+import com.ks.safarhamsafar.GoaOffers.GoaOffersFragment
+import com.ks.safarhamsafar.OffersFragment.OffersFragment
 import com.ks.safarhamsafar.R
 
 
@@ -44,7 +45,14 @@ class MainActivity : AppCompatActivity() {
                 R.id.myTrips_bnv -> {
                     supportFragmentManager.beginTransaction().replace(
                         R.id.frameLayout,
-                        BFragment()
+                        GoaOffersFragment()
+                    ).commit()
+                }
+
+                R.id.offers_bnv->{
+                    supportFragmentManager.beginTransaction().replace(
+                        R.id.frameLayout,
+                        OffersFragment()
                     ).commit()
                 }
 

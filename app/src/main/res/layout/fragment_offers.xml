@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OffersFragment.OffersFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarOffers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        android:minHeight="?attr/actionBarSize"
+        app:title="Offers">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/txtAllOffers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarOffers"
+        android:layout_marginRight="20dp"
+        android:background="@color/whiteColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border_grey">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="All Offers"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:drawableRight="@drawable/down_orange"
+                android:text="Change Category"
+                android:textColor="#FF5722" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtAllOffers"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/activeOffers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:text="Active Offers"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/activeOffers"
+                android:text="38"
+                android:textColor="#FF5722" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler1Offers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/activeOffers"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/UpcomingOffers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:layout_below="@id/recycler1Offers"
+                android:text="Upcoming Offers"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/UpcomingOffers"
+                android:layout_below="@id/recycler1Offers"
+                android:text="6"
+                android:textColor="#FF5722" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler2Offers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/UpcomingOffers"
+                android:layout_marginBottom="20dp"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

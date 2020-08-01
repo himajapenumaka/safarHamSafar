@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="270dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ImgOffers2"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@drawable/pic1"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/txtDOMOffers2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ImgOffers2"
+            android:layout_centerHorizontal="true"
+            android:text="DOM FLIGHTS"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/txtsampleOffers2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Rs. 1000 Instant Discount Every Tuesday!"
+            android:layout_below="@id/txtDOMOffers2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/border4"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offers starts on 13 Jul 2020"
+                android:textColor="@color/whiteColor"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
