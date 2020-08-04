@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="180dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img1Recycler2Holidays"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@drawable/pic3"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/txt1Recycler2Holidays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img1Recycler2Holidays"
+            android:text="Jyotirlinraj"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="17dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/txt2Recycler2Holidays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt1Recycler2Holidays"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="82 Options starting at"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/txt3Recycler2Holidays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt2Recycler2Holidays"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="7dp"
+            android:text="Rs. 3,700"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt2Recycler2Holidays"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/txt3Recycler2Holidays"
+            android:text="per person"
+            android:textColor="#424242"
+            android:textSize="10dp"
+            android:layout_marginTop="3dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
