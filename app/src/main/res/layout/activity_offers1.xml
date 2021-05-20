@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Offers1.Offers1Activity">
+
+    <ScrollView
+        android:id="@+id/scrollViewOffers1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relativeLayoutOffers1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1Offers1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbarOffers1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/ic_share" />
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.Toolbar>
+
+                    <TextView
+                        android:id="@+id/txtGingerOffers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/toolbarOffers1"
+                        android:layout_marginLeft="10dp"
+                        android:text="GINGER Goa Panjim"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@+id/imgRatingOffers1"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/txtGingerOffers1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="-10dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/four_two_star" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/toolbarOffers1"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border2"
+                        android:gravity="center"
+                        android:text="4.2/5"
+                        android:textColor="#fff"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imgGin1Offers1"
+                        android:layout_width="170dp"
+                        android:layout_height="210dp"
+                        android:layout_below="@id/imgRatingOffers1"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/gin1" />
+
+                    <ImageView
+                        android:id="@+id/imgGin2Offers1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/imgRatingOffers1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="-17dp"
+                        android:layout_toRightOf="@id/imgGin1Offers1"
+                        android:src="@drawable/gin2" />
+
+                    <ImageView
+                        android:id="@+id/imgGin3Offers1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/imgGin2Offers1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="-30dp"
+                        android:layout_toRightOf="@id/imgGin1Offers1"
+                        android:src="@drawable/gin3" />
+
+                    <ImageView
+                        android:id="@+id/imgGin4Offers1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/imgGin3Offers1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="-30dp"
+                        android:layout_toRightOf="@id/imgGin1Offers1"
+                        android:src="@drawable/gin4" />
+
+                    <ImageView
+                        android:id="@+id/imgGin5Offers1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/imgRatingOffers1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="-17dp"
+                        android:layout_toRightOf="@id/imgGin2Offers1"
+                        android:src="@drawable/gin5" />
+
+                    <ImageView
+                        android:id="@+id/imgGin6Offers1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/imgGin5Offers1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="-30dp"
+                        android:layout_toRightOf="@id/imgGin3Offers1"
+                        android:src="@drawable/gin6" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/imgGin6Offers1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="-10dp"
+                        android:layout_toRightOf="@id/imgGin4Offers1"
+                        android:background="#ff5722"
+                        android:gravity="center"
+                        android:text="+29 photos"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtHotelOffers1"
+                        android:layout_width="55dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/imgGin1Offers1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border3"
+                        android:gravity="center"
+                        android:text="HOTEL"
+                        android:textColor="#ff5722" />
+
+                    <TextView
+                        android:id="@+id/txtplaceOffers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtHotelOffers1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Panjim" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtHotelOffers1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/txtplaceOffers1"
+                        android:drawableRight="@drawable/map_orange"
+                        android:text="View on Map"
+                        android:textColor="#ff5722" />
+
+                    <LinearLayout
+                        android:id="@+id/llOffers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtplaceOffers1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="Doctor on call"
+                            android:textColor="#424242"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:text="Restaurant"
+                            android:textColor="#424242"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="Conference Room"
+                            android:textColor="#424242"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Kids Play Area"
+                            android:textColor="#424242"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/llOffers1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/border5"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="11 JUL - 12 JUL | 1 Room | 2 Guests                     Modify"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2Offers1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card1Offers1"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt1Offers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="MySafety - Safe and Hygienic Stay"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txt2Offers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt1Offers1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_safe"
+                        android:text="Sanitized Environment"
+                        android:textColor="#424242"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txt3Offers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt1Offers1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/txt2Offers1"
+                        android:drawableLeft="@drawable/ic_safe"
+                        android:text="Trained Staff"
+                        android:textColor="#424242"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txt4Offers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt2Offers1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/ic_safe"
+                        android:text="Safe Practice"
+                        android:textColor="#424242"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txt5Offers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt3Offers1"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_toRightOf="@id/txt4Offers1"
+                        android:drawableLeft="@drawable/ic_safe"
+                        android:text="Safe Dining"
+                        android:textColor="#424242"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3Offers1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card2Offers1"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txtSpecialOffers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Special Offers"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtEMIOffers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtSpecialOffers1"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="10dp"
+                        android:text="EMI"
+                        android:textColor="#FF5722"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/txtLowOffers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtEMIOffers1"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Low Cost EMI Starting at @300.02/month"
+                        android:textColor="#000"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_right" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4Offers1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card3Offers1"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/guestsOffers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="What Guests Said"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/basedOffers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/guestsOffers1"
+                        android:layout_marginLeft="20dp"
+                        android:text="Based on 2260 Verified Reviews"
+                        android:textColor="#424242"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cleanroom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/basedOffers1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:drawableLeft="@drawable/ic_safe"
+                            android:drawablePadding="5dp"
+                            android:text="Clean Room"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cleanproperty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/basedOffers1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/cleanroom">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:drawableLeft="@drawable/ic_safe"
+                            android:drawablePadding="5dp"
+                            android:text="Clean Property"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/goodLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cleanroom"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:drawableLeft="@drawable/ic_safe"
+                            android:drawablePadding="5dp"
+                            android:text="Good Location"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/courteousStaff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cleanproperty"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/goodLocation">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:drawableLeft="@drawable/ic_safe"
+                            android:drawablePadding="5dp"
+                            android:text="Courteous Staff"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/goodFood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/goodLocation"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:drawableLeft="@drawable/ic_safe"
+                            android:drawablePadding="5dp"
+                            android:text="Good Food"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/goodService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/courteousStaff"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/goodFood">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:drawableLeft="@drawable/ic_safe"
+                            android:drawablePadding="5dp"
+                            android:text="Good Service"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/goodRoom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/goodFood"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:drawableLeft="@drawable/ic_safe"
+                            android:drawablePadding="5dp"
+                            android:text="Good Room"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card5Offers1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card4Offers1"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/whatsanofferOffers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="What's On Offer"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/whatsanofferOffers1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgCard5Offers1"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/pic10" />
+
+                            <TextView
+                                android:id="@+id/txt1Card5Offers1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imgCard5Offers1"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Ginger Urban Getaways"
+                                android:textColor="#000"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txt1Card5Offers1"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="@string/txt"
+                                android:textColor="#424242" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutOffers1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/txtrs31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="R̶s̶.̶ ̶5̶,̶6̶2̶5̶"
+            android:textColor="@color/whiteColor" />
+
+        <TextView
+            android:id="@+id/txtrs32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtrs31"
+            android:layout_marginLeft="10dp"
+            android:text="Rs. 3,329"
+            android:textColor="@color/whiteColor"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtrs32"
+            android:layout_marginLeft="10dp"
+            android:text="PER NIGHT FOR 2 ADULTS"
+            android:textColor="@color/whiteColor"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border2"
+            android:text="Select Room"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

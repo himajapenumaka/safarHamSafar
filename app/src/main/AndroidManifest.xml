@@ -9,24 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Holidays.HolidaysActivity">
+        <activity android:name=".Offers1.Offers1Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.SearchHotelVillage" />
-        <activity android:name=".HotelVillas.HotelVillasActivity" />
-        <activity android:name=".Activities.SelectRoomActivity" />
-        <activity android:name=".Activities.SelectPaymentActivity" />
+        <activity android:name=".Holidays.HolidaysActivity"></activity>
+        <activity android:name=".Activities.SearchHotelVillage"></activity>
+        <activity android:name=".HotelVillas.HotelVillasActivity"></activity>
+        <activity android:name=".Activities.SelectRoomActivity" ></activity>
+        <activity android:name=".Activities.SelectPaymentActivity"></activity>
         <activity android:name=".Activities.NetBankingActivity" />
         <activity android:name=".Activities.PayPalActivity" />
         <activity android:name=".Activities.EmiBankActivity" />
         <activity android:name=".Activities.GiftCardActivity" />
         <activity android:name=".Activities.PayByUpiActivity" />
         <activity android:name=".Activities.MobileWalletActivity" />
-        <activity android:name=".Activities.CardInfoActivity" />
+        <activity android:name=".Activities.CardInfoActivity"></activity>
         <activity android:name=".Activities.AmazonPayActivity" />
         <activity android:name=".LogIn.LoginActivity2" />
         <activity android:name=".LogIn.LoginActivity1" />

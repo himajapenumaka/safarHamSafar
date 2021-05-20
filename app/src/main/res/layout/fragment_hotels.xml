@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hotels.HotelsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarHotels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteColor"
+            android:minHeight="?attr/actionBarSize">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/border_grey">
+
+                    <TextView
+                        android:id="@+id/txtHotels"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableRight="@drawable/edit_orange"
+                        android:text="GOA"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtHotels"
+                        android:layout_marginLeft="10dp"
+                        android:text="09 Jul - 10 Jul, 1 Room, 2 Guests"
+                        android:textSize="10dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="-60dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/map_orange" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1Hotels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbarHotels"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt1Hotels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Coronavirus (COVID-19) Update"
+                    android:textColor="#000"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/txt2Hotels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt1Hotels"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/dummy"
+                    android:textColor="#454545" />
+
+                <TextView
+                    android:id="@+id/txt3Hotels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt2Hotels"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="MySafety - Safe and Hygienic Stay"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt4Hotels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt3Hotels"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_safe"
+                    android:text="Sanitized Environment"
+                    android:textColor="#424242"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt5Hotels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt3Hotels"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/txt4Hotels"
+                    android:drawableLeft="@drawable/ic_safe"
+                    android:text="Trained Staff"
+                    android:textColor="#424242"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt6Hotels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt4Hotels"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_safe"
+                    android:text="Safe Practice"
+                    android:textColor="#424242"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt7Hotels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt5Hotels"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@id/txt6Hotels"
+                    android:drawableLeft="@drawable/ic_safe"
+                    android:text="Safe Dining"
+                    android:textColor="#424242"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt6Hotels"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="KNOW MORE"
+                    android:textColor="#FF5722"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtRecommendedHotels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card1Hotels"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Recommended for You"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler1Hotels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txtRecommendedHotels" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2Hotels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recycler1Hotels"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler2Hotels"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_marginBottom="20dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnSeeAllSafetyHotels"
+            android:layout_width="290dp"
+            android:layout_height="34dp"
+            android:background="@drawable/border2"
+            android:textColor="#fff"
+            android:text="See all safety properties"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:elevation="4dp"
+            android:layout_marginTop="-17dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/card2Hotels"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</ScrollView>

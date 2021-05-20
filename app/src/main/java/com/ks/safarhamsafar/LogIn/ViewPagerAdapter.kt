@@ -1,4 +1,4 @@
-package com.ks.safarhamsafar.Adapters
+package com.ks.safarhamsafar.LogIn
 
 import android.content.Context
 import android.view.LayoutInflater

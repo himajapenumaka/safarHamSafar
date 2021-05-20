@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="200dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img1Recycler2Hotels"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/pic5"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/txt1Recycler2Hotels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img1Recycler2Hotels"
+            android:text="The Park Baga River Goa"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:textColor="#000"/>
+
+        <ImageView
+            android:id="@+id/img2Recycler2Hotels"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/txt1Recycler2Hotels"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/black_five_stars"/>
+
+        <TextView
+            android:id="@+id/txt3Recycler2Hotels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img2Recycler2Hotels"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="7dp"
+            android:text="R̶s̶.̶ ̶6̶,̶4̶2̶5̶"
+            android:textSize="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/txt4Recycler2Hotels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt3Recycler2Hotels"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="7dp"
+            android:text="Rs. 3,625"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt3Recycler2Hotels"
+            android:layout_toRightOf="@id/txt4Recycler2Hotels"
+            android:text="40% off"
+            android:textSize="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:textColor="#2196f3"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

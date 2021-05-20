@@ -9,7 +9,6 @@ import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
 import com.ks.safarhamsafar.R
-import com.ks.safarhamsafar.Adapters.ViewPagerAdapter
 import java.util.*
 
 class LoginActivity1 : AppCompatActivity() {
